@@ -28,7 +28,7 @@ services:
     build: otp-service/.
     image: webclient-showcase/otp-service:1
     volumes:
-      - C://logs:/home/otp/logs # TODO: using "C://" makes it os-dependent...
+      - /home/ec2-user/react/logs:/home/otp/logs
     ports:
       - "8001:8001"
     networks:
